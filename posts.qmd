@@ -1,24 +1,20 @@
 ---
-title: "Guillem Maya<br>
+title: "Posts"
 
-<span style='font-size: 20px; font-weight: normal; line-height: 0;'>Data Analyst</span>"
+listing:
+  contents: posts
+  type: table
+  fields: [date, title]
+  sort:
+    - "date desc"
+    - "title desc"
+  table-striped: false
+  table-hover: false
+  date-format: long
+  sort-ui: false
 
 about:
   template: jolla
-  image: guillemmaya92.jpeg
-  image-shape: round
-  image-width: 10em
-  
-  links:
-    - icon: envelope
-      text: Email
-      href: mailto:guillem.maya92@gmail.com
-    - icon: github
-      text: Github
-      href: https://github.com/guillemmaya92
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/guillemmaya/
 
 theme:
   light: flatly
@@ -27,5 +23,3 @@ theme:
 fontsize: 11pt
 mainfont: "Open Sans"
 ---
-
-Young, eager to learn and with special devotion for technology and computer science. I am looking forward to develop my professional career in the field of data analytics with a deep understanding of finance and business processes. I aim to advance within a constant learning environment and be able to implement new systems that drive companies toward a greater efficient.
