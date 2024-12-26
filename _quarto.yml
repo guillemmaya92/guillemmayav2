@@ -3,12 +3,16 @@ project:
   output-dir: docs
 
 website:
-  title: "guillemmaya92.github.io"
   navbar:
-    left:
+    style: "docked"
+    background: transparent
+    right:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: posts.qmd
+        text: Posts
+      - href: cv.qmd
+        text: CV
 
 format:
   html:

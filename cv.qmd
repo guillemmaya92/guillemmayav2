@@ -1,0 +1,78 @@
+---
+title: "Guillem Maya<br>
+
+<span style='font-size: 16px; font-weight: normal; line-height: 0;'>Business Controller | BI Consultant | Data Analyst</span>"
+
+about:
+  template: jolla
+  image: guillemmaya92.jpeg
+  image-shape: round
+  image-width: 10em
+  
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:guillem.maya92@gmail.com
+    - icon: github
+      text: Github
+      href: https://github.com/guillemmaya92
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/guillemmaya/
+
+theme:
+  light: flatly
+  dark: darkly
+
+toc: false
+fontsize: 11pt
+mainfont: "Open Sans"
+      
+---
+
+
+::: {style="text-align: center;"}
+## About me 
+:::
+::: {style="text-align: justify;"}
+Young, eager to learn and with special devotion for technology and computer science. I am looking forward to develop my professional career in the field of data analytics with a deep understanding of finance and business processes. I aim to advance within a constant learning environment and be able to implement new systems that drive companies toward a greater efficient.
+<br>
+<br>
+:::
+___
+
+::: {style="text-align: center;"}
+## Experience
+:::
+::: {style="text-align: justify;"}
+**Business Intelligence Developer**<br>
+Kingspan Insulation | *feb 2024 - present*<br>
+
+Working on the IT team alongside Agility ERP software developers, we design a customized solution for many factories around the world. My tasks are focused on data analytics with a deep understanding of all business processes. Managing data pipelines using T-SQL queries and ETL techniques supported by stored procedures and job schedules. Developing advanced analytical models and reporting in SSAS, Power BI, SSRS, and Report Builder. Providing actionable insights to business users in order to facilitate an informed decision-making and driving the company to an organizational efficiency model.  
+
+<br>
+<br>
+**Business Data Analyst**<br>
+Costa Brava Mediterranean Foods | *sep 2023 - feb 2024*<br>
+
+Defining workflows in Navision with the primary objective of optimizing processes and guarantee our data quality. Proficiently extracting and refining raw data through SQL queries and procedures. Orchestration and managing data flows. Developing advanced analytical models in Power BI and calculating business measures using DAX. Uncovering intricate data patterns and empowering the company to understand better the business. Defining reports and showing insights to enhance decision-making.  
+
+<br>
+<br>
+:::
+___
+
+::: {style="text-align: center;"}
+## Education
+:::
+::: {style="text-align: justify;"}
+***Universidad Autónoma de Barcelona*** | *Barcelona, Spain*<br>
+Master's degree in education and teacher training, Mathematics | *Sept 2020 - June 2021*<br>
+<br>
+***Tecnológico de Monterrey*** | *Guadalajara, Mexico*<br>
+Santander Bank Ibero-America Scholarship | *jan 2017 - jun 2017*<br>
+<br>
+***Universitat de Girona*** | *Girona, Spain*<br>
+Bachelor's degree in Business Administration | *sep 2013 - jun 2017*<br>
+:::
+
