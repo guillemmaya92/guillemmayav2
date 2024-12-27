@@ -12,9 +12,7 @@ listing:
   table-hover: false
   date-format: long
   sort-ui: false
-
-about:
-  template: jolla
+  categories: false
 
 theme:
   light: flatly
@@ -22,4 +20,6 @@ theme:
 
 fontsize: 11pt
 mainfont: "Open Sans"
+
+toc: false
 ---

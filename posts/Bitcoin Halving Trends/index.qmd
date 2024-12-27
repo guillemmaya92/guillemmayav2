@@ -1,5 +1,7 @@
 ---
-title: "Bitcoin Logarithmic Trends"
+title: "Bitcoin Logarithmic Trends: Analysis since each halving"
+
+categories: "Economy"
 
 date: "2024-12-27"
 
@@ -81,7 +83,7 @@ halving['date'] = pd.to_datetime(halving['date'])
 
 # DataSet 1 - BTC Price
 # ==============================================================================
-# Definir y ordenar dataset
+# Prepare dataset
 btc = btc.drop_duplicates()
 btc['date'] = pd.to_datetime(btc['date'])
 btc['year_month'] = btc['date'].dt.strftime('%Y-%m')
@@ -204,4 +206,4 @@ plt.tight_layout()
 plt.show()
 ```
 
-<img src="FIG_Bitcoin.png" style="width: 100%; text-align: center;">
+![](FIG_Bitcoin.png){.lightbox width="125%"}

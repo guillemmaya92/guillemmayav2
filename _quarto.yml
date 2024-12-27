@@ -3,6 +3,7 @@ project:
   output-dir: docs
 
 website:
+  favicon: files/favicon.png
   navbar:
     style: "docked"
     background: transparent
@@ -17,7 +18,8 @@ website:
 format:
   html:
     theme: cosmo
-    css: styles.css
+    css:
+      - styles/styles.css
     toc: true
 
 editor: visual

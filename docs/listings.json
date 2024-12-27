@@ -2,9 +2,11 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/Exploring Discrepancies/index.html",
+      "/posts/GDP per Capita Distribution/index.html",
       "/posts/Bitcoin Halving Trends/index.html",
-      "/posts/polars2/index.html",
-      "/posts/polars/index.html"
+      "/posts/Polar Axis Demonstration/index.html",
+      "/posts/Analysis of cars/index.html"
     ]
   }
 ]
