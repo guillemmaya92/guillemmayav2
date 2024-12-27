@@ -1,5 +1,5 @@
 ---
-title: "Distribution of Global GDP"
+title: "Distribution of Global GDP: Visualizing Income Mountains"
 
 categories: "Economy"
 
@@ -7,7 +7,7 @@ date: "2024-12-27"
 
 description: |
   <span style="font-size: 16px; text-align: left; display: block;">
-    Evolution by regions from 1980 to 2030
+    Evolution by regions from 1900 to 2100
   </span>
   
 theme:

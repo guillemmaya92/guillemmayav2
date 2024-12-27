@@ -4,6 +4,9 @@ project:
 
 website:
   favicon: files/favicon.png
+  back-to-top-navigation: true
+  google-analytics:
+    tracking-id: "G-GJVKVH4E2Y"
   navbar:
     style: "docked"
     background: transparent
