@@ -1,5 +1,6 @@
 ---
 title: "Polar Axis demonstration"
+categories: "Test"
 format:
   html:
     theme:

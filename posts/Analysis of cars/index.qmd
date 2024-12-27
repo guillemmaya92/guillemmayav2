@@ -1,6 +1,15 @@
 ---
 title: "Analysis of Cars"
+categories: "Test"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    code-fold: true
 date: "2024-11-25"
+
+toc: false
 ---
 
 # Header
