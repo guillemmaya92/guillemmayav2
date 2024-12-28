@@ -2,11 +2,11 @@
   {
     "listing": "/posts.html",
     "items": [
-      "/posts/Bitcoin Distribution/index.html",
-      "/posts/Exploring Discrepancies/index.html",
-      "/posts/GDP per Capita Distribution/index.html",
-      "/posts/Bitcoin Halving Trends/index.html",
-      "/posts/Polar Axis Demonstration/index.html"
+      "/posts/bitcoin-distribution/index.html",
+      "/posts/flags-inequalities-gdp/index.html",
+      "/posts/distribution-mountains-gdpc/index.html",
+      "/posts/bitcoin-halvings/index.html",
+      "/posts/polar-axis/index.html"
     ]
   }
 ]
