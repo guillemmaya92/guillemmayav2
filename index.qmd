@@ -3,7 +3,7 @@ title: "Guillem Maya"
 
 description: |
   <span style="font-size: 16px; text-align: center; display: block;">
-    Personal Website
+    <i>@damnedliestats</i>
   </span>
 
 about:
@@ -22,13 +22,12 @@ about:
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/guillemmaya/
-
-theme:
-  light: flatly
-  dark: darkly
+    - icon: balloon-heart-fill
+      text: Bluesky
+      href: https://bsky.app/profile/damnedliestats.bsky.social
 
 fontsize: 11pt
 mainfont: "Open Sans"
 ---
 
-Young, eager to learn and with special devotion for technology and computer science. I am looking forward to develop my professional career in the field of data analytics with a deep understanding of finance and business processes. I aim to advance within a constant learning environment and be able to implement new systems that drive companies toward a greater efficient.
+From nowhere, delving into the challenges faced by modern economies. I am an enthusiast of data and economics, interested in exploring and uncovering a genuine comprehension of the global world. Focused on social inequalities and the development of a sustainable economy, I pursue a transversal approach that examines these concepts from a holistic and multidisciplinary perspective.

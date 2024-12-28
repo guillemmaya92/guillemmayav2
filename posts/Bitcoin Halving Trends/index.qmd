@@ -1,35 +1,27 @@
 ---
 title: "Bitcoin Logarithmic Trends: Analysis since each halving"
 
-categories: "Economy"
+description: "Bitcoin's logarithmic trends track its price movements over time, with each halving event serving as a key point for analysis. Halvings reduce the supply of new Bitcoin, often leading to significant price changes."
+
+categories: "Stock"
 
 date: "2024-12-27"
 
-description: |
-  <span style="font-size: 16px; text-align: left; display: block;">
-    Analysis since each halving
-  </span>
-  
-theme:
-  light: flatly
-  dark: darkly
+keywords: ["Bitcoin"]
+
+jupyter: python3
 
 format:
   html:
     code-fold: true
-    
-toc: false
-fontsize: 11pt
-mainfont: "Open Sans"
-
-jupyter: python3
-
-keywords: ["Bitcoin"]
 ---
+
+## Summary
 
 A plot that shows the logarithmic price of `Bitcoin` over each halving period.
 
 ```{python}
+#| eval: false
 #| echo: true
 #| output: false
 #| warning: false
@@ -207,3 +199,5 @@ plt.show()
 ```
 
 ![](FIG_Bitcoin.png){.lightbox width="125%"}
+
+{{< bluesky-comments at://did:plc:u7zijsa6hoysmuw2cr476odq/app.bsky.feed.post/3lecne6gpkk24 >}}

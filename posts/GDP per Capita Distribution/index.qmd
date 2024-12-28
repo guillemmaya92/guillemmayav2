@@ -1,31 +1,22 @@
 ---
 title: "Distribution of Global GDP: Visualizing Income Mountains"
 
+description: "Explores the global distribution of GDP, representing income disparities as visual mountains to highlight the contrast between wealthy and less wealthy regions."
+
 categories: "Economy"
 
-date: "2024-12-27"
+date: "2025-01-25"
 
-description: |
-  <span style="font-size: 16px; text-align: left; display: block;">
-    Evolution by regions from 1900 to 2100
-  </span>
-  
-theme:
-  light: flatly
-  dark: darkly
+keywords: ["Daily Income"]
+
+jupyter: python3
 
 format:
   html:
     code-fold: true
-    
-toc: false
-fontsize: 11pt
-mainfont: "Open Sans"
-
-jupyter: python3
-
-keywords: ["Daily Income"]
 ---
+
+## Summary
 
 A plot that shows the evolution of `Daily Income` based on GDP per Capita (\$US constant 2017) from 1900 to 2100.
 

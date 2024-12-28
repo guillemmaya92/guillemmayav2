@@ -40,3 +40,15 @@
   color: #fff;
   background-color: #18bc9c
 }
+
+.navbar #quarto-search.type-overlay .aa-Autocomplete {
+    width: 60px;
+}
+
+.navbar .aa-DetachedSearchButton .aa-DetachedSearchButtonIcon {
+    width: 18px;  /* Ancho del ícono */
+    height: 18px;  /* Alto del ícono */
+    display: flex;
+    flex: 1 1 auto;
+    margin-top: 5px;
+}

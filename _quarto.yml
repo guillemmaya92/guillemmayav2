@@ -4,9 +4,12 @@ project:
 
 website:
   favicon: files/favicon.png
+ 
   back-to-top-navigation: true
+ 
   google-analytics:
     tracking-id: "G-GJVKVH4E2Y"
+
   navbar:
     style: "docked"
     background: transparent
@@ -20,10 +23,26 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: [flatly, "styles/theme-light.scss"]
+      dark: [darkly, "styles/theme-dark.scss"]
     css:
       - styles/styles.css
-    toc: true
+    font:
+      text: "Open Sans"
+    fontsize: 11pt
+    toc: false
+
+bluesky-comments:
+  mute-patterns:
+    - "📌"
+    - "🔥"
+    - "/\\bspam\\b/i"  # regex pattern
+  mute-users:
+    - "did:plc:1234abcd"
+  filter-empty-replies: true
+  visible-comments: 3
+  visible-subcomments: 3
 
 editor: visual
 

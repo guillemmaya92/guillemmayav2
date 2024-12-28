@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-12-27">
+<meta name="dcterms.date" content="2025-02-17">
 <meta name="keywords" content="Inequalities">
-<meta name="description" content=" Analysis between countries ">
+<meta name="description" content="Examines the differences between market exchange rates and PPP, highlighting how these discrepancies reflect economic imbalances and price level variations across countries.">
 
 <title>Exploring Discrepancies between Market Exchanges Rates and Purchasing Power Parity</title>
 <style>
@@ -60,7 +60,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -77,8 +77,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-daddb088e155c0feff884c3870ee741f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-4a779674b5cec3e6453ff3c6a8021d5f.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-87da8c5ef5bc782547e66699f7652114.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b80ae5bafbe972f49f1d07bdf7e79d0d.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,44 +106,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
-
-
-
-<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GJVKVH4E2Y"></script>
 
 <script type="text/javascript">
 
-window.PlotlyConfig = {MathJaxConfig: 'local'};
-
-if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
-
-if (typeof require !== 'undefined') {
-
-require.undef("plotly");
-
-requirejs.config({
-
-    paths: {
-
-        'plotly': ['https://cdn.plot.ly/plotly-2.32.0.min']
-
-    }
-
-});
-
-require(['plotly'], function(Plotly) {
-
-    window._Plotly = Plotly;
-
-});
-
-}
-
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-GJVKVH4E2Y', { 'anonymize_ip': true});
 </script>
-
-
-
 
 
 <link rel="stylesheet" href="../../styles/styles.css">
@@ -199,7 +170,7 @@ require(['plotly'], function(Plotly) {
 
 <div>
   <div class="description">
-    <p><span style="font-size: 16px; text-align: left; display: block;"> Analysis between countries </span></p>
+    Examines the differences between market exchange rates and PPP, highlighting how these discrepancies reflect economic imbalances and price level variations across countries.
   </div>
 </div>
 
@@ -210,7 +181,7 @@ require(['plotly'], function(Plotly) {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 27, 2024</p>
+      <p class="date">February 17, 2025</p>
     </div>
   </div>
   
@@ -228,8 +199,10 @@ require(['plotly'], function(Plotly) {
 </header>
 
 
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
 <p>A plot that shows the current <code>Inequalities</code> in capital productivity.</p>
-<div id="5cb103eb" class="cell" data-execution_count="1">
+<div id="5d67d5a5" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Libraries</span></span>
@@ -503,12 +476,13 @@ require(['plotly'], function(Plotly) {
 <span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<iframe src="FIG_PPP_Inequalities_Flag.html" style="width: 100%; height: 100vh; border: none;">
+<iframe width="800" height="800" src="FIG_PPP_Inequalities_Flag.html" style="border:none;">
 </iframe>
 
 
+</section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
