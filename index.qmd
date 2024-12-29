@@ -25,7 +25,7 @@ about:
     - icon: balloon-heart-fill
       text: Bluesky
       href: https://bsky.app/profile/damnedliestats.bsky.social
-
+      
 fontsize: 11pt
 mainfont: "Open Sans"
 ---

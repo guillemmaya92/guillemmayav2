@@ -10,13 +10,9 @@ listing:
     - "title desc"
   table-striped: false
   table-hover: false
-  date-format: long
+  date-format: medium
   sort-ui: false
   categories: false
-
-theme:
-  light: flatly
-  dark: darkly
 
 fontsize: 11pt
 mainfont: "Open Sans"

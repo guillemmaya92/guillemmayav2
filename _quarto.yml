@@ -3,13 +3,14 @@ project:
   output-dir: docs
 
 website:
+  # title: "Guillem Maya"
+  # description: "A data economics blog and portfolio by Guillem Maya"
+  site-url: https://guillemmaya.com
+  repo-url: https://github.com/guillemmaya92/guillemmaya.com
   favicon: files/favicon.png
- 
   back-to-top-navigation: true
- 
   google-analytics:
     tracking-id: "G-GJVKVH4E2Y"
-
   navbar:
     style: "docked"
     background: transparent
@@ -20,6 +21,10 @@ website:
         text: Posts
       - href: cv.qmd
         text: CV
+  page-footer:
+    border: false
+    left: |
+      Powered by [{{< iconify simple-icons:quarto >}} Quarto](https://quarto.org).
 
 format:
   html:
@@ -31,6 +36,8 @@ format:
     font:
       text: "Open Sans"
     fontsize: 11pt
+    date-format: medium
+    lang: en
     toc: false
 
 bluesky-comments:
