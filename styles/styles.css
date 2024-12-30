@@ -84,6 +84,10 @@ body.quarto-dark .quarto-category:hover {
   font-weight: bold;
 }
 
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
 /* JS typing-effect style */
 #typing-effect {
     font-family: 'Open Sans', sans-serif;

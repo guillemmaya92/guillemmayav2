@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://guillemmaya.com/index.html</loc>
-    <lastmod>2024-12-30T20:35:25.046Z</lastmod>
-  </url>
-  <url>
     <loc>https://guillemmaya.com/posts.html</loc>
     <lastmod>2024-12-29T21:07:12.475Z</lastmod>
+  </url>
+  <url>
+    <loc>https://guillemmaya.com/posts/2025/flags-inequalities-gdp/index.html</loc>
+    <lastmod>2024-12-30T21:44:15.452Z</lastmod>
+  </url>
+  <url>
+    <loc>https://guillemmaya.com/posts/2025/bitcoin-halvings/index.html</loc>
+    <lastmod>2024-12-30T21:44:47.853Z</lastmod>
+  </url>
+  <url>
+    <loc>https://guillemmaya.com/index.html</loc>
+    <lastmod>2024-12-30T20:35:25.046Z</lastmod>
   </url>
   <url>
     <loc>https://guillemmaya.com/cv.html</loc>
     <lastmod>2024-12-30T20:07:47.620Z</lastmod>
   </url>
   <url>
-    <loc>https://guillemmaya.com/posts/bitcoin-distribution/index.html</loc>
-    <lastmod>2024-12-28T01:29:25.219Z</lastmod>
+    <loc>https://guillemmaya.com/posts/2025/bitcoin-distribution/index.html</loc>
+    <lastmod>2024-12-30T21:44:58.267Z</lastmod>
   </url>
   <url>
-    <loc>https://guillemmaya.com/posts/flags-inequalities-gdp/index.html</loc>
-    <lastmod>2024-12-28T11:23:22.266Z</lastmod>
+    <loc>https://guillemmaya.com/posts/2025/distribution-mountains-gdpc/index.html</loc>
+    <lastmod>2024-12-30T21:44:33.084Z</lastmod>
   </url>
   <url>
-    <loc>https://guillemmaya.com/posts/bitcoin-halvings/index.html</loc>
-    <lastmod>2024-12-30T21:00:15.473Z</lastmod>
-  </url>
-  <url>
-    <loc>https://guillemmaya.com/posts/distribution-mountains-gdpc/index.html</loc>
-    <lastmod>2024-12-28T01:24:19.590Z</lastmod>
-  </url>
-  <url>
-    <loc>https://guillemmaya.com/posts/polar-axis/index.html</loc>
-    <lastmod>2024-12-28T01:07:39.903Z</lastmod>
+    <loc>https://guillemmaya.com/posts/2025/polar-axis/index.html</loc>
+    <lastmod>2024-12-30T21:43:47.235Z</lastmod>
   </url>
 </urlset>
