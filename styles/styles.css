@@ -83,3 +83,10 @@ body.quarto-dark .quarto-category:hover {
 .navbar .active {
   font-weight: bold;
 }
+
+/* JS typing-effect style */
+#typing-effect {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    white-space: nowrap;
+}

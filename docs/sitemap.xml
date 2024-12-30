@@ -2,10 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://guillemmaya.com/index.html</loc>
-    <lastmod>2024-12-29T20:21:50.373Z</lastmod>
+    <lastmod>2024-12-30T20:35:25.046Z</lastmod>
   </url>
   <url>
     <loc>https://guillemmaya.com/posts.html</loc>
     <lastmod>2024-12-29T21:07:12.475Z</lastmod>
+  </url>
+  <url>
+    <loc>https://guillemmaya.com/cv.html</loc>
+    <lastmod>2024-12-30T20:07:47.620Z</lastmod>
+  </url>
+  <url>
+    <loc>https://guillemmaya.com/posts/bitcoin-distribution/index.html</loc>
+    <lastmod>2024-12-28T01:29:25.219Z</lastmod>
+  </url>
+  <url>
+    <loc>https://guillemmaya.com/posts/flags-inequalities-gdp/index.html</loc>
+    <lastmod>2024-12-28T11:23:22.266Z</lastmod>
+  </url>
+  <url>
+    <loc>https://guillemmaya.com/posts/bitcoin-halvings/index.html</loc>
+    <lastmod>2024-12-30T21:00:15.473Z</lastmod>
+  </url>
+  <url>
+    <loc>https://guillemmaya.com/posts/distribution-mountains-gdpc/index.html</loc>
+    <lastmod>2024-12-28T01:24:19.590Z</lastmod>
+  </url>
+  <url>
+    <loc>https://guillemmaya.com/posts/polar-axis/index.html</loc>
+    <lastmod>2024-12-28T01:07:39.903Z</lastmod>
   </url>
 </urlset>

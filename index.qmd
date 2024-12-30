@@ -2,7 +2,7 @@
 title: "Guillem Maya"
 
 description: |
-  <span style="font-size: 16px; text-align: center; display: block;">
+  <span id="typing-effect" style="font-size: 16px; text-align: center; display: block;">
     <i>@damnedliestats</i>
   </span>
 
@@ -22,12 +22,14 @@ about:
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/guillemmaya/
-    - icon: balloon-heart-fill
-      text: Bluesky
-      href: https://bsky.app/profile/damnedliestats.bsky.social
+    - text: "{{< iconify fa6-brands bluesky >}} Bluesky"
+      href: https://bsky.app/profile/guillemmaya.com
       
 fontsize: 11pt
 mainfont: "Open Sans"
+
+header-includes:
+  - <script src="styles/typing-effect.js"></script>
 ---
 
 From nowhere, delving into the challenges faced by modern economies. I am an enthusiast of data and economics, interested in exploring and uncovering a genuine comprehension of the global world. Focused on social inequalities and the development of a sustainable economy, I pursue a transversal approach that examines these concepts from a holistic and multidisciplinary perspective.

@@ -11,8 +11,10 @@ website:
   back-to-top-navigation: true
   google-analytics:
     tracking-id: "G-GJVKVH4E2Y"
+    anonymize-ip: true
   navbar:
     style: "docked"
+    collapse: true
     background: transparent
     right:
       - href: index.qmd
@@ -25,6 +27,8 @@ website:
     border: false
     left: |
       Powered by [{{< iconify simple-icons:quarto >}} Quarto](https://quarto.org).
+    right: |
+      Made with <span style="color: #22bc9c;">{{< fa heart title="a heart" >}}</span> in <a href="https://www.google.com/maps/place/Girona" target="_blank" style="text-decoration: none; color: inherit;">Girona</a>
 
 format:
   html:
@@ -33,8 +37,7 @@ format:
       dark: [darkly, "styles/theme-dark.scss"]
     css:
       - styles/styles.css
-    font:
-      text: "Open Sans"
+    mainfont: "Open Sans"
     fontsize: 11pt
     date-format: medium
     lang: en
