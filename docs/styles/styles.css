@@ -4,6 +4,16 @@
     color: black;
 }
 
+::-moz-selection {
+  background-color: lightyellow;
+  color: black;
+}
+
+::-webkit-selection {
+  background-color: lightyellow;
+  color: black;
+}
+
 /* Scrollbar Style */
 ::-webkit-scrollbar {
     width: 12px;
