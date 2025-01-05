@@ -9,6 +9,10 @@ date: "2024-12-27"
 
 keywords: ["Bitcoin"]
 
+image: featured.png
+image-alt: |
+  Bitcoin trends
+
 jupyter: python3
 
 format:

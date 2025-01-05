@@ -1,4 +1,5 @@
-/* Text selecion color */
+/* COLOR Text Selection */
+/******************************/
 ::selection {
     background-color: lightyellow;
     color: black;
@@ -14,7 +15,8 @@
   color: black;
 }
 
-/* Scrollbar Style */
+/* SCROLLBAR Custom */
+/******************************/
 ::-webkit-scrollbar {
     width: 12px;
     background-color: #f0f0f0;
@@ -38,6 +40,8 @@
     border-radius: 6px;
 }
 
+/* CATEGORIES Custom */
+/******************************/
 .quarto-category {
   display: inline-block;
   padding: 0.35em 0.65em;
@@ -78,6 +82,8 @@ body.quarto-dark .quarto-category:hover {
   border-color: #75ffe4;
 }
 
+/* NAVBAR Custom */
+/******************************/
 .navbar #quarto-search.type-overlay .aa-Autocomplete {
     width: 60px;
 }
@@ -98,9 +104,113 @@ body.quarto-dark .quarto-category:hover {
   text-decoration: underline;
 }
 
-/* JS typing-effect style */
+/* Cover JS typing-effect style */
+/******************************/
 #typing-effect {
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
     white-space: nowrap;
 }
+
+/* CV Details */
+/**********************************************************/
+/* Arrow */
+/******************************/
+body.quarto-light details summary::marker {
+  font-size: 0.85rem;
+  color: #333333;
+  margin-top: 0.5rem;
+}
+
+body.quarto-light details summary:hover::marker {
+  color: #cccccc;
+}
+
+body.quarto-light details[open] summary::marker {
+  color: #cccccc;
+
+}
+
+body.quarto-light details[open] summary:hover::marker {
+  color: #333333;
+}
+
+/* Summary */
+/******************************/
+body.quarto-light details summary {
+  font-size: 0.85rem;
+  color: #333333;
+  margin-top: 0.5rem;
+}
+
+body.quarto-light details summary:hover {
+  color: #cccccc;
+}
+
+body.quarto-light details[open] summary {
+  color: #cccccc;
+}
+
+body.quarto-light details[open] summary:hover {
+  color:#333333;
+}
+
+/* Details */
+/******************************/
+body.quarto-light details {
+  color: #454545;
+  font-size: 0.9rem;
+}
+
+/* Arrow Dark */
+/******************************/
+body.quarto-dark details summary::marker {
+  font-size: 0.85rem;
+  color: #FFFAFA;
+  margin-top: 0.5rem;
+}
+
+body.quarto-dark details summary:hover::marker {
+  color: #666666;
+}
+
+body.quarto-dark details[open] summary::marker {
+  color: #666666;
+
+}
+
+body.quarto-dark details[open] summary:hover::marker {
+  color: #FFFAFA;
+}
+
+/* Summary Dark */
+/******************************/
+body.quarto-dark details summary {
+  font-size: 0.85rem;
+  color: #FFFAFA;
+  margin-top: 0.5rem;
+}
+
+body.quarto-dark details summary:hover {
+  color: #666666;
+}
+
+body.quarto-dark details[open] summary {
+  color: #666666;
+}
+
+body.quarto-dark details[open] summary:hover {
+  color: #FFFAFA;
+}
+
+/* Details Dark*/
+/******************************/
+body.quarto-dark details {
+  color: #FFFAFA;
+  font-size: 0.9rem;
+}
+
+
+
+
+
