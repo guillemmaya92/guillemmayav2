@@ -118,7 +118,7 @@ body.quarto-dark .quarto-category:hover {
 /******************************/
 body.quarto-light details summary::marker {
   font-size: 0.85rem;
-  color: #333333;
+  color: #707070;
   margin-top: 0.5rem;
 }
 
@@ -132,14 +132,14 @@ body.quarto-light details[open] summary::marker {
 }
 
 body.quarto-light details[open] summary:hover::marker {
-  color: #333333;
+  color: #707070;
 }
 
 /* Summary */
 /******************************/
 body.quarto-light details summary {
   font-size: 0.85rem;
-  color: #333333;
+  color: #707070;
   margin-top: 0.5rem;
 }
 
@@ -152,7 +152,7 @@ body.quarto-light details[open] summary {
 }
 
 body.quarto-light details[open] summary:hover {
-  color:#333333;
+  color:#707070;
 }
 
 /* Details */
@@ -166,7 +166,7 @@ body.quarto-light details {
 /******************************/
 body.quarto-dark details summary::marker {
   font-size: 0.85rem;
-  color: #FFFAFA;
+  color: #dedede;
   margin-top: 0.5rem;
 }
 
@@ -180,14 +180,14 @@ body.quarto-dark details[open] summary::marker {
 }
 
 body.quarto-dark details[open] summary:hover::marker {
-  color: #FFFAFA;
+  color: #dedede;
 }
 
 /* Summary Dark */
 /******************************/
 body.quarto-dark details summary {
   font-size: 0.85rem;
-  color: #FFFAFA;
+  color: #dedede;
   margin-top: 0.5rem;
 }
 
@@ -200,13 +200,13 @@ body.quarto-dark details[open] summary {
 }
 
 body.quarto-dark details[open] summary:hover {
-  color: #FFFAFA;
+  color: #dedede;
 }
 
 /* Details Dark*/
 /******************************/
 body.quarto-dark details {
-  color: #FFFAFA;
+  color: #dedede;
   font-size: 0.9rem;
 }
 

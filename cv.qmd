@@ -39,15 +39,14 @@ Young, eager to learn and with special devotion for technology and computer scie
 ## Experience
 :::
 
-::: {style="text-align: justify;"}
-**Business Intelligence Developer**<br> <a href="https://www.kingspan.com/" target="_blank">Kingspan Insulation</a> \| *feb 2024 - present*
-<span style="float: right; font-size: 0.9rem;">
-  <span style="color: #f07f7f; font-style: normal;">⚲</span> Girona
-</span>
-<br>
+:::::::::::: {style="text-align: justify;"}
+**Business Intelligence Developer**<br> <a href="https://www.kingspan.com/" target="_blank">Kingspan Insulation</a> \| <i>feb 2024 - present</i>
 
+::: {style="text-align: right; font-size: 0.9rem; margin-top: -35px;"}
+<i style="color: #f07f7f; font-style: normal;">⚲</i> Girona
+:::
 
-<details>
+<details style="text-align: justify;" close>
 
 <summary>Description</summary>
 
@@ -55,15 +54,16 @@ Working on the IT team alongside Agility ERP software developers, we design a cu
 
 </details>
 
-<div style="height: 1rem;"></div>
+::: {style="height: 1rem;"}
+:::
 
 **Business Data Analyst**<br> <a href="https://www.costabravafoods.com/" target="_blank">Costa Brava Mediterranean Foods</a> \| *sep 2023 - feb 2024*
-<span style="float: right; font-size: 0.9rem;">
-  <span style="color: #f07f7f; font-style: normal;">⚲</span> Girona
-</span>
-<br>
 
-<details>
+::: {style="text-align: right; font-size: 0.9rem; margin-top: -35px;"}
+<i style="color: #f07f7f; font-style: normal;">⚲</i> Girona
+:::
+
+<details style="text-align: justify;">
 
 <summary>Description</summary>
 
@@ -71,15 +71,16 @@ Defining workflows in Navision with the primary objective of optimizing processe
 
 </details>
 
-<div style="height: 1rem;"></div>
+::: {style="height: 1rem;"}
+:::
 
 **Commercial Controller**<br> <a href="https://www.inoxpa.com/" target="_blank">INOXPA</a> \| *mar 2022 - sep 2023*
-<span style="float: right; font-size: 0.9rem;">
-  <span style="color: #f07f7f; font-style: normal;">⚲</span> Girona
-</span>
-<br>
 
-<details>
+::: {style="text-align: right; font-size: 0.9rem; margin-top: -35px;"}
+<i style="color: #f07f7f; font-style: normal;">⚲</i> Girona
+:::
+
+<details style="text-align: justify;">
 
 <summary>Description</summary>
 
@@ -87,16 +88,16 @@ Report to CCO & CFO, support to the 17 commercial delegations in the world, foll
 
 </details>
 
-<div style="height: 1rem;"></div>
+::: {style="height: 1rem;"}
+:::
 
-**Business Controller**<br> 
-<a href="https://mediamarktsaturn.com/" target="_blank">Mediamarkt Iberia</a> | *mar 2020 - jun 2020* 
-<span style="float: right; font-size: 0.9rem;">
-  <span style="color: #f07f7f; font-style: normal;">⚲</span> Barcelona
-</span>
-<br>
+**Business Controller**<br> <a href="https://mediamarktsaturn.com/" target="_blank">Mediamarkt Iberia</a> \| *mar 2020 - jun 2020*
 
-<details>
+::: {style="text-align: right; font-size: 0.9rem; margin-top: -35px;"}
+<i style="color: #f07f7f; font-style: normal;">⚲</i> Barcelona
+:::
+
+<details style="text-align: justify;">
 
 <summary>Description</summary>
 
@@ -104,15 +105,16 @@ Management control of the whole network shops, monthly reporting of KPI metrics 
 
 </details>
 
-<div style="height: 1rem;"></div>
+::: {style="height: 1rem;"}
+:::
 
 **Commercial Controller**<br> <a href="https://www.haribo.com/" target="_blank">Haribo Spain</a> \| *jun 2016 - mar 2020*
-<span style="float: right; font-size: 0.9rem;">
-  <span style="color: #f07f7f; font-style: normal;">⚲</span> Girona
-</span>
-<br>
 
-<details>
+::: {style="text-align: right; font-size: 0.9rem; margin-top: -35px;"}
+<i style="color: #f07f7f; font-style: normal;">⚲</i> Girona
+:::
+
+<details style="text-align: justify;">
 
 <summary>Description</summary>
 
@@ -121,7 +123,7 @@ Calculation of the accrual expenses according to commercial agreements, forecast
 </details>
 
 <br>
-:::
+::::::::::::
 
 <hr style="width: 80%; margin: auto; border-top: 1px solid inherit; margin-top: 20px; margin-bottom: 20px;">
 
