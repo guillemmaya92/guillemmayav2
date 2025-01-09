@@ -16,7 +16,7 @@ format:
 
 ## Summary
 
-This is a global graphical representation of income and wealth for the years 1995 and 2021. It compares Gini indices through Lorenz curves at both intra- and inter-country levels.
+This is a global graphical representation of income and wealth for the years 1995 and 2021. Illustrating the dynamics of inequality by comparing Gini indices through Lorenz curves, both within (intra-country) and between (inter-country) nations.
 
 ```{python}
 #| eval: false
