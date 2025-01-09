@@ -3,7 +3,7 @@ title: "European Regions NUTS2: GDP per Capita"
 
 description: "Map visualization of GDP per capita by region"
 
-categories: ["Economy", "Python"]
+categories: [economy, python]
 
 date: "2025-07-11"
 
