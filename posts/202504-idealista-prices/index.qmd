@@ -7,7 +7,7 @@ categories: [economy, r]
 
 date: "2025-04-09"
 
-keywords: ["alquiler"]
+keywords: ["Alquiler"]
 
 format:
   html:
@@ -223,7 +223,7 @@ ggsave("C:/Users/guill/Downloads/Barcelonés.jpeg",
 ::: {style="height: 25x;"}
 :::
 
-<hr style="width: 60%; margin: auto; border-top: 0.75px solid #aaaa; margin-bottom: 20px;">
+<div style="height: 50px;"></div>
 
 ::: {style="height: 25x;"}
 :::
@@ -237,7 +237,7 @@ ggsave("C:/Users/guill/Downloads/Barcelonés.jpeg",
 ::: {style="height: 25x;"}
 :::
 
-<hr style="width: 60%; margin: auto; border-top: 0.75px solid #aaaa; margin-bottom: 20px;">
+<div style="height: 50px;"></div>
 
 ::: {style="height: 25x;"}
 :::
@@ -245,5 +245,5 @@ ggsave("C:/Users/guill/Downloads/Barcelonés.jpeg",
 ::: {layout-ncol="2"}
 ![](catalunya.jpeg){.lightbox}
 
-![](catalunya_NC.jpeg){.lightbox}
+![](catalunya_nc.jpeg){.lightbox}
 :::
