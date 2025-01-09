@@ -215,9 +215,9 @@ ggsave("C:/Users/guill/Downloads/Barcelonés.jpeg",
 ```
 
 ::: {layout-ncol="2"}
-![](barcelones.jpeg){.lightbox}
+![](FIG_Barcelones.jpeg){.lightbox}
 
-![](girones.jpeg){.lightbox}
+![](FIG_Girones.jpeg){.lightbox}
 :::
 
 ::: {style="height: 25x;"}
@@ -229,9 +229,9 @@ ggsave("C:/Users/guill/Downloads/Barcelonés.jpeg",
 :::
 
 ::: {layout-ncol="2"}
-![](tarragones.jpeg){.lightbox}
+![](FIG_Tarragones.jpeg){.lightbox}
 
-![](segria.jpeg){.lightbox}
+![](FIG_Segria.jpeg){.lightbox}
 :::
 
 ::: {style="height: 25x;"}
@@ -243,7 +243,7 @@ ggsave("C:/Users/guill/Downloads/Barcelonés.jpeg",
 :::
 
 ::: {layout-ncol="2"}
-![](catalunya.jpeg){.lightbox}
+![](FIG_Catalunya.jpeg){.lightbox}
 
-![](catalunya_nc.jpeg){.lightbox}
+![](FIG_Catalunya_NC.jpeg){.lightbox}
 :::
