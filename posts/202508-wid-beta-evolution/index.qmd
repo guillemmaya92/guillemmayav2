@@ -101,42 +101,39 @@ sns.lineplot(data=dfc, x='year', y='beta', hue='country', linewidth=2.25, palett
 sns.lineplot(data=dfc, x='year', y='beta', hue='country', linewidth=1.5, palette=palette, legend=False)
 
 # Custom plot
-plt.text(0, 1.05, f'Capital is Back', fontsize=13, fontweight='bold', ha='left', transform=plt.gca().transAxes)
-plt.text(0, 1.02, 'Wealth-Income Ratios in Advanced Economies 1980-2023', fontsize=9, color='#262626', ha='left', transform=plt.gca().transAxes)
+plt.text(0, 1.08, 'Capital is back', fontsize=16, fontweight='bold', ha='left', transform=plt.gca().transAxes)
+plt.text(0, 1.045, 'Wealth-Income Ratios in Advanced Economies 1980-2023', fontsize=11, color='#262626', ha='left', transform=plt.gca().transAxes)
 plt.xlabel('Year', fontsize=10, fontweight='bold')
-plt.ylabel(f'Wealth-Income Ratio', fontsize=10, fontweight='bold')
-plt.grid(axis='x', alpha=0.8, linestyle='--')
+plt.ylabel('Wealth-Income Ratio', fontsize=10, fontweight='bold')
+plt.grid(axis='x', alpha=0.7, linestyle=':')
 plt.ylim(0, 12)
 plt.xlim(1980, 2026)
 plt.xticks(range(1980, 2026, 10))
 plt.tight_layout()
 
+# Delete spines
+for spine in ["top", "right"]:
+    plt.gca().spines[spine].set_visible(False)
+
 # Add Data Source
-plt.text(0, -0.1, 'Data Source: World Inequality Database (WID)', 
+plt.text(0, -0.08, 'Data Source: World Inequality Database (WID)', 
     transform=plt.gca().transAxes, 
     fontsize=8,
     fontweight='bold',
     color='gray')
 
 # Add Notes
-plt.text(0, -0.12, 'Notes: Wealth-Income Ratio is the division of national wealth by national income.', 
+plt.text(0, -0.1, 'Notes: Wealth-Income Ratio is the division of national wealth by national income.', 
     transform=plt.gca().transAxes, 
     fontsize=7,
     fontstyle='italic',
     color='gray')
 
-# Add Author
-plt.text(0.9, -0.1, '@guillemmaya', 
-    transform=plt.gca().transAxes, 
-    fontsize=9,
-    fontstyle='italic',
-    color='#212121')
-
  # Add Year label
 formatted_date = 2023
-plt.text(1, 1.06, f'{formatted_date}',
+plt.text(1, 1.08, f'{formatted_date}',
     transform=plt.gca().transAxes,
-    fontsize=22, ha='right', va='top',
+    fontsize=20, ha='right', va='top',
     fontweight='bold', color='#D3D3D3')
 
 # Legend values
@@ -160,7 +157,7 @@ line4.set_path_effects([patheffects.withStroke(linewidth=4, foreground='black')]
 line5.set_path_effects([patheffects.withStroke(linewidth=4, foreground='black')])
 
 # Legend plot
-plt.legend(handles=[line1, line2, line3, line4, line5, line6], title='Countries', fontsize=8, title_fontproperties=fm.FontProperties(weight='bold'))
+plt.legend(handles=[line1, line2, line3, line4, line5, line6], title='Countries', fontsize=9, title_fontproperties=fm.FontProperties(weight='bold'))
 
 # Define flags
 flag_urls = {

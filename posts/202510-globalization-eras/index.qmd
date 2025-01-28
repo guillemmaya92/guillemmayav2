@@ -5,7 +5,7 @@ description: "The pace of globalization slowed in the decade and a half since th
 
 categories: [economy, python]
 
-date: "2025-08-14"
+date: "2025-10-09"
 
 keywords: ["wealth-income"]
 

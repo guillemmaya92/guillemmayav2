@@ -2,8 +2,9 @@
   {
     "listing": "/posts.html",
     "items": [
-      "/posts/202509-wid-beta-2023/index.html",
+      "/posts/202511-gdpc-global-north/index.html",
       "/posts/202510-globalization-eras/index.html",
+      "/posts/202509-wid-beta-2023/index.html",
       "/posts/202508-wid-beta-evolution/index.html",
       "/posts/202507-gdpc-europe-nuts2/index.html",
       "/posts/202506-global-structure-economy/index.html",
@@ -12,8 +13,7 @@
       "/posts/202503-bitcoin-distribution/index.html",
       "/posts/202502-flags-inequalities-gdp/index.html",
       "/posts/202501-distribution-mountains-gdpc/index.html",
-      "/posts/202412-bitcoin-halvings/index.html",
-      "/posts/202410-polar-axis/index.html"
+      "/posts/202412-bitcoin-halvings/index.html"
     ]
   }
 ]
