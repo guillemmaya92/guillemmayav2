@@ -215,35 +215,20 @@ ggsave("C:/Users/guill/Downloads/Barcelonés.jpeg",
 ```
 
 ::: {layout-ncol="2"}
-![](FIG_Barcelones.jpeg){.lightbox}
+![](FIG_Barcelona.jpeg){.lightbox}
 
-![](FIG_Girones.jpeg){.lightbox}
+![](FIG_Girona.jpeg){.lightbox}
 :::
 
 ::: {style="height: 25x;"}
 :::
 
-<div style="height: 50px;"></div>
-
-::: {style="height: 25x;"}
-:::
-
-::: {layout-ncol="2"}
-![](FIG_Tarragones.jpeg){.lightbox}
-
-![](FIG_Segria.jpeg){.lightbox}
+::: {style="height: 50px;"}
 :::
 
 ::: {style="height: 25x;"}
 :::
 
-<div style="height: 50px;"></div>
-
-::: {style="height: 25x;"}
-:::
-
-::: {layout-ncol="2"}
+::: {layout-ncol="1"}
 ![](FIG_Catalunya.jpeg){.lightbox}
-
-![](FIG_Catalunya_NC.jpeg){.lightbox}
 :::

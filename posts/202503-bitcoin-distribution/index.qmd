@@ -1,7 +1,7 @@
 ---
-title: "Bitcoin Wealth Distribution: Utopian vision of narcocapitalism "
+title: "Bitcoin Wealth Distribution: Utopian vision of anarcho-capitalism "
 
-description: "Critiques the concentration of Bitcoin wealth, exploring how its distribution aligns with ideals of narcocapitalism, where economic power is concentrated among a few, often bypassing traditional systems."
+description: "Critiques the concentration of Bitcoin wealth, exploring how its distribution aligns with ideals of anarcho-capitalism, where economic power is concentrated among a few, often bypassing traditional systems."
 
 categories: "stock"
 
