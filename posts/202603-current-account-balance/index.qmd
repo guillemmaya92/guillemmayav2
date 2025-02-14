@@ -7,7 +7,7 @@ categories: [economy, python]
 
 date: "2026-03-14"
 
-keywords: ["income", "wealth"]
+keywords: ["exorbitant privilege"]
 
 format:
   html:
@@ -16,7 +16,7 @@ format:
 
 ## Summary
 
-Global trade imbalances reveal structural asymmetries in the international financial system, with the United States playing a unique role due to the dominance of the U.S. dollar. While some economies accumulate surpluses, the U.S. consistently runs large trade deficits. This persistent imbalance is not simply a weakness but a reflection of the "exorbitant privilege" of the dollar as the world’s primary reserve currency.
+Global trade imbalances reveal structural asymmetries in the international financial system, with the United States playing a unique role due to the dominance of the U.S. dollar. While some economies accumulate surpluses, the U.S. consistently runs large trade deficits. This persistent imbalance is not simply a weakness but a reflection of the `exorbitant privilege`\` of the dollar as the world’s primary reserve currency.
 
 ```{python}
 #| eval: false
@@ -179,8 +179,8 @@ plt.text(45, -500, f"← {usa_percent:.0%}", fontsize=7, ha='left', va='bottom')
 plt.text(45, 250, f"← {eur_percent:.0%}", fontsize=7, ha='left', va='bottom')
 plt.text(45, 675, f"← {chn_percent:.0%}", fontsize=7, ha='left', va='bottom')
 
-plt.text(45, 1900, f"World\ndeficit", fontsize=7, fontweight = 'bold', ha='left', va='top')
-plt.text(45, -1500, f"World\nsuperavit", fontsize=7, fontweight = 'bold', ha='left', va='bottom')
+plt.text(45, 1900, f"World\nsuperavit", fontsize=7, fontweight = 'bold', ha='left', va='top')
+plt.text(45, -1500, f"World\ndeficit", fontsize=7, fontweight = 'bold', ha='left', va='bottom')
 
 # Remove spines
 for spine in plt.gca().spines.values():
