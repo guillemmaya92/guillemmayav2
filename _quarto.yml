@@ -21,11 +21,9 @@ website:
     background: transparent
     right:
       - href: index.qmd
-        text: Home
+        text: home
       - href: posts.qmd
-        text: Posts
-      - href: cv.qmd
-        text: CV
+        text: posts
   page-footer:
     border: false
     left: |

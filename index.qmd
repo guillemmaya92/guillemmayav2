@@ -1,5 +1,5 @@
 ---
-title: "Guillem Maya"
+title: "hello world!"
 
 description: |
   <span id="typing-effect" style="font-size: 16px; text-align: center; display: block;">
