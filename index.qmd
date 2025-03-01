@@ -8,7 +8,7 @@ description: |
 
 about:
   template: jolla
-  image: files/world_center.jpeg
+  image: files/world.jpeg
   image-shape: round
   image-width: 10em
   
