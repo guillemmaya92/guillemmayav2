@@ -3,7 +3,7 @@ title: "hello world!"
 
 description: |
   <span id="typing-effect" style="font-size: 16px; text-align: center; display: block;">
-    <i>@damnedliestats</i>
+    <i>@donotblame.me</i>
   </span>
 
 about:

@@ -1,5 +1,5 @@
 ---
-title: "Who absorbs the World's savings?"
+title: "Who absorbs the World's surplus?"
 
 description: "An analysis of global imbalance in the current account."
 
@@ -26,6 +26,7 @@ Global trade imbalances reveal structural asymmetries in the international finan
 #| label: "Income 50-50"
 # Libraries
 # =====================================================================
+import os
 import requests
 import pandas as pd
 import numpy as np
@@ -33,6 +34,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import matplotlib.ticker as mticker
+from matplotlib import font_manager
 
 # Data Extraction (Countries)
 # =====================================================================
@@ -46,8 +48,8 @@ df_countries = df.rename(columns={'index': 'ISO3'})
 
 # Data Extraction (IMF)
 # =====================================================================
-#Parametro
-parameters = ['BCA']
+#Parameter
+parameters = ['BCA', 'NGDPD']
 
 # Create an empty list
 records = []
@@ -81,37 +83,45 @@ df = df.dropna(subset=['BCA'], how='any')
 
 # Merge queries
 df = df.merge(df_countries, how='left', left_on='ISO3', right_on='ISO3')
-df = df[['ISO3', 'Country', 'Year', 'BCA', 'Analytical', 'Region', 'Cod_Currency']]
+df = df[['ISO3', 'Country', 'Year', 'BCA', 'NGDPD', 'Analytical', 'Region', 'Cod_Currency']]
 df = df[df['Region'].notna()]
 
 # Custom region
 conditions = [
     df['ISO3'] == 'USA',
-    df['ISO3'] == 'CHN',
+    df['ISO3'] == 'GBR',
+    df['ISO3'].isin(['CHN', 'TWN', 'HKG', 'MAC']),
+    df['ISO3'] == 'JPN',
     df['Cod_Currency'] == 'EUR',
     df['BCA'] >= 0,
     df['BCA'] < 0
 ]
-result = ['USA', 'China', 'Europe', 'Positive', 'Negative']
+result = ['USA', 'UK', 'Greater China', 'Japan', 'Eurozone', 'Other Surplus', 'Other Deficit']
 
 df['Region'] = np.select(conditions, result)
 
 # Groupping region and year
-df = df.groupby(["Region", "Year"], as_index=False)["BCA"].sum()
+df = df.groupby(["Region", "Year"], as_index=False)[["BCA", "NGDPD"]].sum()
+
+# Add total GDP
+df['NGDPD'] = df.groupby('Year')['NGDPD'].transform('sum')
+df['Ratio'] = df['BCA'] / df['NGDPD'] * 100
 
 # Pivot Regions
-df = df.pivot_table(index="Year", columns="Region", values="BCA", aggfunc="sum")
-    
+df = df.pivot_table(index="Year", columns="Region", values="Ratio", aggfunc="sum")
+
 # Reorder columns
-df = df[["USA", "Europe", "China", "Positive", "Negative"]]
+df = df[["USA", "UK", "Eurozone", "Greater China", "Japan", "Other Surplus", "Other Deficit"]]
 
 # Filter period
-df = df.loc[df.index <= 2024]
+df = df.loc[df.index <= 2029]
 
 # Values
-usa_percent = df.loc[2024, 'USA'] / (df.loc[2024, 'USA'] + df.loc[2024, 'Negative'])
-eur_percent = df.loc[2024, 'Europe'] / (df.loc[2024, 'Europe'] + df.loc[2024, 'China'] + df.loc[2024, 'Positive'])
-chn_percent = df.loc[2024, 'China'] / (df.loc[2024, 'Europe'] + df.loc[2024, 'China'] + df.loc[2024, 'Positive'])
+usa_percent = df.loc[2029, 'USA'] / (df.loc[2029, 'Other Deficit'] + df.loc[2029, 'USA'] + df.loc[2029, 'UK'])
+uk_percent = df.loc[2029, 'UK'] / (df.loc[2029, 'Other Deficit'] + df.loc[2029, 'USA'] + df.loc[2029, 'UK'])
+eur_percent = df.loc[2029, 'Eurozone'] / (df.loc[2029, 'Other Surplus'] + df.loc[2029, 'Eurozone'] + df.loc[2029, 'Greater China'] + df.loc[2029, 'Japan'])
+chn_percent = df.loc[2029, 'Greater China'] / (df.loc[2029, 'Other Surplus'] + df.loc[2029, 'Eurozone'] + df.loc[2029, 'Greater China'] + df.loc[2029, 'Japan'])
+jpn_percent = df.loc[2029, 'Japan'] / (df.loc[2029, 'Other Surplus'] + df.loc[2029, 'Eurozone'] + df.loc[2029, 'Greater China'] + df.loc[2029, 'Japan'])
 
 print(df)
 
@@ -122,18 +132,23 @@ plt.rcParams.update({'font.family': 'sans-serif', 'font.sans-serif': ['Franklin 
 sns.set(style="white", palette="muted")
 
 # Palette
-palette = ["#003366", "#068a41", "#FF0000", "#cfcfcf", "#cfcfcf"]
+palette = ["#C00000", "#E75527", "#002D64", "#157FFF", "#90bee0", "#E8F1F8", "#FFE1E1"]
+
+# Create figure
+fig, ax = plt.subplots(figsize=(10, 6))
 
 # Crear figure and plot
-ax = df.plot(kind="bar", stacked=True, figsize=(10, 6), width=0.7, color=palette, legend=False)
+ax = df.plot(kind="bar", stacked=True, width=0.9, color=palette, legend=False, ax=ax)
 
-# Add title and labels
-plt.text(0, 1.12, f'Who Absorbs the World’s Savings?', fontsize=16, fontweight='bold', ha='left', transform=plt.gca().transAxes)
-plt.text(0, 1.07, f'Global imbalance in the current account', fontsize=11, color='#262626', ha='left', transform=plt.gca().transAxes)
+# Title
+fig.add_artist(plt.Line2D([0.11, 0.11], [0.91, 1], linewidth=6, color='#203764', solid_capstyle='butt')) 
+plt.text(0, 1.12, f'Who Absorbs the World’s Surplus?', fontsize=16, fontweight='bold', ha='left', transform=plt.gca().transAxes)
+plt.text(0, 1.08, f'Global imbalance in the current account', fontsize=11, color='#262626', ha='left', transform=plt.gca().transAxes)
+plt.text(0, 1.045, f'(as percent of global GDP)', fontsize=8, color='#262626', ha='left', transform=plt.gca().transAxes)
 
 # Adjust ticks and grid
-plt.ylim(-2000, 2000)
-ax.set_xticks(range(0, len(df) + 1, len(df) // 10))  # Ajustar el rango con len(df)+1
+plt.ylim(-3, 3)
+ax.set_xticks(range(0, 50, 5))  # Ajustar el rango con len(df)+1
 ax.set_xticklabels(df.index[::len(df) // 10], fontsize=9, rotation=0)
 ax.yaxis.set_major_formatter(mticker.FuncFormatter(lambda x, pos: f'{int(x):,}'.replace(",", ".")))
 plt.gca().set_xlabel('')
@@ -143,17 +158,20 @@ plt.grid(axis='x', linestyle='--', color='gray', linewidth=0.5, alpha=0.3)
 # Custom legend values
 handles = [
     mpatches.Patch(color=palette[0], label="USA", linewidth=2),
-    mpatches.Patch(color=palette[1], label="Eurozone", linewidth=2),
-    mpatches.Patch(color=palette[2], label="China", linewidth=2),
-    mpatches.Patch(color=palette[3], label="Rest of countries", linewidth=2)
+    mpatches.Patch(color=palette[1], label="UK", linewidth=2),
+    mpatches.Patch(color=palette[2], label="Eurozone", linewidth=2),
+    mpatches.Patch(color=palette[3], label="Greater China (大中华)", linewidth=2),
+    mpatches.Patch(color=palette[4], label="Japan (日本)", linewidth=2),
+    mpatches.Patch(color=palette[5], label="Other Surplus", linewidth=2),
+    mpatches.Patch(color=palette[6], label="Other Deficit", linewidth=2)
 ]
 
 # Legend
-plt.legend(
+legend = plt.legend(
     handles=handles,
-    loc='lower center', 
+    loc='lower center', #center
     bbox_to_anchor=(0.5, -0.12),
-    ncol=4,
+    ncol=8,
     fontsize=8,
     frameon=False,
     handlelength=0.5,
@@ -161,6 +179,13 @@ plt.legend(
     borderpad=0.2,
     columnspacing=0.4
 )
+# legend.set_bbox_to_anchor((60, 0), transform=ax.transData)
+
+# Change Font (accept chinese characters)
+prop = font_manager.FontProperties(fname='C:\\Windows\\Fonts\\msyh.ttc')
+for text in legend.get_texts():
+    text.set_fontproperties(prop)
+    text.set_fontsize(8)
 
 # Add Data Source
 plt.text(0, -0.15, 'Data Source:', 
@@ -175,20 +200,32 @@ plt.text(0, -0.15, space + 'IMF World Economic Outlook Database, 2024',
     color='gray')
 
 # Add text
-plt.text(45, -500, f"← {usa_percent:.0%}", fontsize=7, ha='left', va='bottom')
-plt.text(45, 250, f"← {eur_percent:.0%}", fontsize=7, ha='left', va='bottom')
-plt.text(45, 675, f"← {chn_percent:.0%}", fontsize=7, ha='left', va='bottom')
+plt.text(50, -0.35, f"← {usa_percent:.0%}", fontsize=7, ha='left', va='bottom')
+plt.text(50, -0.6, f"← {uk_percent:.0%}", fontsize=7, ha='left', va='bottom')
+plt.text(50, 0.15, f"← {eur_percent:.0%}", fontsize=7, ha='left', va='bottom')
+plt.text(50, 0.55, f"← {chn_percent:.0%}", fontsize=7, ha='left', va='bottom')
+plt.text(50, 0.8, f"← {jpn_percent:.0%}", fontsize=7, ha='left', va='bottom')
 
-plt.text(45, 1900, f"World\nsuperavit", fontsize=7, fontweight = 'bold', ha='left', va='top')
-plt.text(45, -1500, f"World\ndeficit", fontsize=7, fontweight = 'bold', ha='left', va='bottom')
+plt.text(50, 2, f"World\nsurplus", fontsize=7, fontweight = 'bold', ha='left', va='top')
+plt.text(50, -1.8, f"World\ndeficit", fontsize=7, fontweight = 'bold', ha='left', va='bottom')
+
+# Forecast
+plt.text(47, 3.1, f'Forecast', fontsize=7, fontweight='bold', color='gray', ha='center')
+ax.axvspan(44.5, 49.5, color='gray', alpha=0.15, edgecolor='none')
 
 # Remove spines
 for spine in plt.gca().spines.values():
     spine.set_visible(False)
 
+# Save it...
+download_folder = os.path.join(os.path.expanduser("~"), "Downloads")
+filename = os.path.join(download_folder, f"FIG_IMF_Global_Surplus.png")
+plt.savefig(filename, dpi=300, bbox_inches='tight')
+
+# Show :)
 plt.show()
 ```
 
 ::: {layout-ncol="1"}
-![](FIG_IMF_Current_Account.png){.lightbox}
+![](FIG_IMF_Global_Surplus.png){.lightbox}
 :::
