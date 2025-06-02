@@ -5,7 +5,7 @@ description: "How dominant countries use the free-floating currency markets as s
 
 categories: "economy"
 
-date: "2026-07-11"
+date: "2026-08-19"
 
 keywords: ["neocolonialism"]
 

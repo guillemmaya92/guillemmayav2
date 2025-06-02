@@ -53,21 +53,86 @@ df_countries = df.rename(columns={'index': 'cod_country'})
 # To use the built-in plotting method
 indicator = ['NY.GDP.PCAP.CD', 'SP.POP.TOTL']
 countries = df_countries['cod_country'].tolist()
-data_range = ['1960', '2023']
+data_range = list(range(1960, 1971))
 data = wb.data.DataFrame(indicator, countries, data_range, numericTimeKeys=True, labels=False, columns='series').reset_index()
 df_wb = data.rename(columns={
     'economy': 'cod_country',
     'time': 'year',
     'NY.GDP.PCAP.CD': 'gdpc',
-    'SP.POP.TOTL': 'pop'
+    'SP.POP.TOTL': 'pop',
 })
+
+# First value in period 1960-1970
+df_wb = df_wb[df_wb['gdpc'].notna()]
+
+# Filter First data (except USA)
+df_list = []
+
+for country in df_wb['cod_country'].unique():
+    df_country = df_wb[df_wb['cod_country'] == country]
+    if country == 'USA':
+        # For USA Keep all years
+        df_list.append(df_country)
+    else:
+        # Another countries keep first data
+        df_country = df_country[df_country['gdpc'].notna()]
+        if not df_country.empty:
+            first_year_idx = df_country['year'].idxmin()
+            df_list.append(df_country.loc[[first_year_idx]])
+            
+# Concatenar todo de nuevo
+df_wb = pd.concat(df_list, ignore_index=True)
+
+# Data Extraction - IMF (1980-2030)
+# =====================================================================
+#Parametro
+parameters = ['LP', 'NGDPDPC']
+
+# Create an empty list
+records = []
+
+# Iterar sobre cada parámetro
+for parameter in parameters:
+    # Request URL
+    url = f"https://www.imf.org/external/datamapper/api/v1/{parameter}/?periods=2024"
+    response = requests.get(url)
+    data = response.json()
+    values = data.get('values', {})
+
+    # Iterate over each country and year
+    for country, years in values.get(parameter, {}).items():
+        for year, value in years.items():
+            records.append({
+                'parameter': parameter,
+                'cod_country': country,
+                'year': int(year),
+                'value': float(value)
+            })
+    
+# Create dataframe
+df_imf = pd.DataFrame(records)
+
+# Pivot Parameter to columns and filter nulls
+df_imf = df_imf.pivot(index=['cod_country', 'year'], columns='parameter', values='value').reset_index()
+
+# Rename columns
+df_imf = df_imf.rename(columns={'NGDPDPC': 'gdpc', 'LP': 'pop'})
+
+# Adjust LP to worldbank
+df_imf['pop'] = df_imf['pop'] * 1000000
+
+# Data Merging
+# =====================================================================
+# Concat and filter dataframes
+df_wb = pd.concat([df_wb, df_imf], ignore_index=True)
+df_wb = df_wb.dropna(subset=['gdpc', 'pop'], how='any')
 
 # Data Manipulation
 # ========================================================
 # Filter nulls and both years
 df_wb = df_wb[~df_wb['gdpc'].isna()]
 df_unique = df_wb.groupby('cod_country')['year'].nunique()
-country_ok = df_unique[df_unique == 2].index
+country_ok = df_unique[df_unique >= 2].index
 df_wb = df_wb[df_wb['cod_country'].isin(country_ok)]
 
 # Add gdpc_usa
@@ -75,12 +140,13 @@ usa_gdpc = df_wb[df_wb['cod_country'] == 'USA'][['year', 'gdpc']].rename(columns
 df_wb = df_wb.merge(usa_gdpc, on='year', how='left')
 df_wb['gdpc_usa_rel'] = df_wb['gdpc'] / df_wb['gdpc_usa'] * 100
 df_wb['ln_gdpc_usa_rel'] = np.log(df_wb['gdpc_usa_rel'])
+df_wb = df_wb[~((df_wb['cod_country'] == 'USA') & (~df_wb['year'].isin([1960, 2024])))]
 
 # Select columns
 df_wb = df_wb[['cod_country', 'year', 'pop', 'gdpc', 'gdpc_usa_rel', 'ln_gdpc_usa_rel']]
 
 # Rename year row values
-df_wb['year'] = df_wb['year'].replace({1960: 'start', 2023: 'end'})
+df_wb['year'] = np.where(df_wb['year'] == 2024, 'end', 'start')
 
 # Unpivot to columns
 df_wb = df_wb.pivot_table(index='cod_country', columns='year', values=['pop', 'gdpc', 'gdpc_usa_rel', 'ln_gdpc_usa_rel'])
@@ -153,7 +219,7 @@ for color in df['color_dot'].unique():
         hovertemplate=(
             "<b>%{customdata[0]}</b><br>"
             "GDP Capita (1960): %{customdata[1]:,.0f} (%{customdata[2]:,.2f}%)<br>"
-            "GDP Capita (2023): %{customdata[3]:,.0f} (%{customdata[4]:,.2f}%)<extra></extra>"
+            "GDP Capita (2024): %{customdata[3]:,.0f} (%{customdata[4]:,.2f}%)<extra></extra>"
         )
     ))
 
@@ -188,7 +254,7 @@ fig.update_layout(
         text=(
             "<b style='font-size:22px;'>The Middle Income Trap</b>"
             "<span style='font-size:2px;'> </span><br>"
-            "<span style='font-size:14px; color:gray;'>Income per person relative to United States, 1960 vs 2023</span>"
+            "<span style='font-size:14px; color:gray;'>Income per person relative to United States, 1960 vs 2024</span>"
         ),
         font=dict(size=24, color="black"),
         x=0.1,
@@ -208,7 +274,7 @@ fig.update_layout(
         font=dict(size=12, color="black", family="sans-serif")
     ),
     yaxis_title=dict(
-        text="<b>Income per person relative to US, 2023</b>",
+        text="<b>Income per person relative to US, 2024</b>",
         font=dict(size=12, color="black", family="sans-serif")
     )
 )
@@ -217,7 +283,7 @@ fig.update_layout(
 fig.update_layout(
     annotations=[
         dict(
-            text="<b>Data Source:</b> World Bank, World Development Indicators (2024)",
+            text="<b>Data Source:</b> IMF World Economic Outlook Database | World Bank, World Development Indicators (2024)",
             xref="paper",
             yref="paper",
             x=0,
