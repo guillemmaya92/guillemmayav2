@@ -23,7 +23,7 @@ The charts illustrate the evolution of urbanization in China, the income inequal
 #| echo: true
 #| output: false
 #| warning: false
-#| label: "China Cities"
+#| label: "China Urbanization"
 # Libraries
 # ========================================================
 import pandas as pd
