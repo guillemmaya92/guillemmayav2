@@ -1,6 +1,8 @@
 ---
 title: "Guillem Maya"
 
+filename: "cv"
+
 description: |
   <span style="font-size: 16px; text-align: center; display: block;">
     Business Controller | BI Consultant | Data Analyst

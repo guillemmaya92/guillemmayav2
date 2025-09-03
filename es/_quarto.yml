@@ -24,6 +24,8 @@ website:
         text: inicio
       - href: posts.qmd
         text: entradas
+      - href: cv.qmd
+        text: cv
       - text: idioma
         menu:
           - text: '<img src="/files/en.svg" width="16"/> Inglés'

@@ -1,9 +1,11 @@
 ---
 title: "Guillem Maya"
 
+filename: "cv"
+
 description: |
   <span style="font-size: 16px; text-align: center; display: block;">
-    Business Controller | BI Consultant | Data Analyst
+    Controller de Negocio | Consultor BI | Analista de Datos
   </span>
 
 about:
@@ -24,11 +26,11 @@ mainfont: "Open Sans"
 <hr style="width: 60%; margin: auto; border-top: 0.75px solid #aaaa; margin-bottom: 20px;">
 
 ::: {style="text-align: center;"}
-## About me
+## Acerca de mí
 :::
 
 ::: {style="text-align: justify;"}
-Young, eager to learn and with special devotion for technology and computer science. I am looking forward to develop my professional career in the field of data analytics with a deep understanding of finance and business processes. I aim to advance within a constant learning environment and be able to implement new systems that drive companies toward a greater efficient.
+Joven, con ganas de aprender y con especial dedicación a la tecnología y la informática. Busco desarrollar mi carrera profesional en el campo del análisis de datos con un profundo entendimiento de las finanzas y los procesos empresariales. Mi objetivo es avanzar en un entorno de aprendizaje constante y poder implementar nuevos sistemas que impulsen a las empresas hacia una mayor eficiencia.
 :::
 
 <br>
@@ -36,11 +38,11 @@ Young, eager to learn and with special devotion for technology and computer scie
 <hr style="width: 80%; margin: auto; border-top: 1px solid inherit; margin-top: 20px; margin-bottom: 20px;">
 
 ::: {style="text-align: center;"}
-## Experience
+## Experiencia
 :::
 
 :::::::::::: {style="text-align: justify;"}
-**Business Intelligence Developer**<br> <a href="https://www.kingspan.com/" target="_blank">Kingspan Insulation</a> \| <i>feb 24 - present</i>
+**Business Intelligence Developer**<br> <a href="https://www.kingspan.com/" target="_blank">Kingspan Insulation</a> \| <i>feb 24 - actualidad</i>
 
 ::: {style="text-align: right; font-size: 0.9rem; margin-top: -35px;"}
 <i style="color: #f07f7f; font-style: normal;">⚲</i> Girona
@@ -48,9 +50,9 @@ Young, eager to learn and with special devotion for technology and computer scie
 
 <details style="text-align: justify;" close>
 
-<summary>Description</summary>
+<summary>Descripción</summary>
 
-Working on the IT team alongside Agility ERP software developers, we design a customized solution for many factories around the world. My tasks are focused on data analytics with a deep understanding of all business processes. Managing data pipelines using T-SQL queries and ETL techniques supported by stored procedures and job schedules. Developing advanced analytical models and reporting in SSAS, Power BI, SSRS, and Report Builder. Providing actionable insights to business users in order to facilitate an informed decision-making and driving the company to an organizational efficiency model.
+Trabajando en el equipo de TI junto con los desarrolladores del software Agility ERP, diseñamos soluciones personalizadas para numerosas fábricas alrededor del mundo. Mis tareas se enfocan en el análisis de datos con un profundo entendimiento de todos los procesos empresariales. Gestión de pipelines de datos utilizando consultas T-SQL y técnicas ETL apoyadas por procedimientos almacenados y programación de trabajos. Desarrollo de modelos analíticos avanzados e informes en SSAS, Power BI, SSRS y Report Builder. Proporciono información procesable a los usuarios del negocio para facilitar la toma de decisiones informadas y llevar a la empresa hacia un modelo de eficiencia organizacional.
 
 </details>
 
@@ -65,9 +67,9 @@ Working on the IT team alongside Agility ERP software developers, we design a cu
 
 <details style="text-align: justify;">
 
-<summary>Description</summary>
+<summary>Descripción</summary>
 
-Defining workflows in Navision with the primary objective of optimizing processes and guarantee our data quality. Proficiently extracting and refining raw data through SQL queries and procedures. Orchestration and managing data flows. Developing advanced analytical models in Power BI and calculating business measures using DAX. Uncovering intricate data patterns and empowering the company to understand better the business. Defining reports and showing insights to enhance decision-making.
+Definición de flujos de trabajo en Navision con el objetivo principal de optimizar los procesos y garantizar la calidad de nuestros datos. Extracción y depuración eficiente de datos en bruto mediante consultas y procedimientos SQL. Orquestación y gestión de flujos de datos. Desarrollo de modelos analíticos avanzados en Power BI y cálculo de métricas empresariales utilizando DAX. Descubrimiento de patrones de datos complejos y fortalecimiento de la capacidad de la empresa para comprender mejor el negocio. Definición de informes y presentación de insights para mejorar la toma de decisiones.
 
 </details>
 
@@ -82,9 +84,9 @@ Defining workflows in Navision with the primary objective of optimizing processe
 
 <details style="text-align: justify;">
 
-<summary>Description</summary>
+<summary>Descripción</summary>
 
-Report to CCO & CFO, support to the 17 commercial delegations in the world, follow-up of industrial and commercial margins, review of exchange rates and monitoring of discounts, preparation of the company's budget and strategic plan, review of business procedures in Microsoft Dynamics AX, develop of Power BI as main reporting tool.
+Reportando al CCO y al CFO, brindando soporte a las 17 delegaciones comerciales en el mundo, seguimiento de márgenes industriales y comerciales, revisión de tipos de cambio y monitoreo de descuentos, elaboración del presupuesto y del plan estratégico de la empresa, revisión de los procedimientos de negocio en Microsoft Dynamics AX y desarrollo de Power BI como herramienta principal de informes.
 
 </details>
 
@@ -99,9 +101,9 @@ Report to CCO & CFO, support to the 17 commercial delegations in the world, foll
 
 <details style="text-align: justify;">
 
-<summary>Description</summary>
+<summary>Descripción</summary>
 
-Management control of the whole network shops, monthly reporting of KPI metrics by store, budgeting and measurement of the company target, performing strategic planning supported by business forecast models, analysis of profitability for promotions and commercial campaigns, carrying out periodically financial audits in order to quality control policies and procedures.
+Control de gestión de toda la red de tiendas, elaboración de informes mensuales de métricas KPI por tienda, presupuestación y medición de los objetivos de la empresa, realización de planificación estratégica apoyada en modelos de previsión empresarial, análisis de rentabilidad de promociones y campañas comerciales, y ejecución periódica de auditorías financieras para controlar la calidad de las políticas y procedimientos.
 
 </details>
 
@@ -116,9 +118,9 @@ Management control of the whole network shops, monthly reporting of KPI metrics 
 
 <details style="text-align: justify;">
 
-<summary>Description</summary>
+<summary>Descripción</summary>
 
-Calculation of the accrual expenses according to commercial agreements, forecast of the annual budget, development of TM1 solutions in IBM Cognos BI, reporting NNSales to the Holding Group, design consistent business control models for financial accounting, pricing and promotions strategy, analysis of logistics projects, reconciliation of intercompany sales for the Konzernplan.
+Cálculo de los gastos devengados según los acuerdos comerciales, previsión del presupuesto anual, desarrollo de soluciones TM1 en IBM Cognos BI, elaboración de informes de NNSales para el Grupo Holding, diseño de modelos consistentes de control de negocio para contabilidad financiera, estrategia de precios y promociones, análisis de proyectos logísticos y conciliación de ventas entre compañías para el Konzernplan.
 
 </details>
 
@@ -128,15 +130,15 @@ Calculation of the accrual expenses according to commercial agreements, forecast
 <hr style="width: 80%; margin: auto; border-top: 1px solid inherit; margin-top: 20px; margin-bottom: 20px;">
 
 ::: {style="text-align: center;"}
-## Education
+## Formación
 :::
 
 ::: {style="text-align: justify;"}
-**Universidad Autónoma de Barcelona** \| *Barcelona, Spain*<br> Master's degree in education and teacher training, Mathematics \| *Sept 20 - June 21*
+**Universidad Autónoma de Barcelona** \| *Barcelona, España*<br> Máster en Educación y Formación de Profesorado, Matemáticas \| *Sept 20 - June 21*
 
-**Tecnológico de Monterrey** \| *Guadalajara, Mexico*<br> Santander Bank Ibero-America Scholarship \| *jan 17 - jun 17*
+**Tecnológico de Monterrey** \| *Guadalajara, Mexico*<br> Beca Santander Banco Iberoamérica \| *ene 17 - jun 17*
 
-**Universitat de Girona** \| *Girona, Spain*<br> Bachelor's degree in Business Administration \| *sep 13 - jun 17*<br>
+**Universitat de Girona** \| *Girona, España*<br> Grado en Administración y Dirección de Empresas \| *sep 13 - jun 17*<br>
 :::
 
 <br>
@@ -146,31 +148,31 @@ Calculation of the accrual expenses according to commercial agreements, forecast
 ::::::::: columns
 ::::: {.column width="50%"}
 ::: {style="text-align: center;"}
-## Language
+## Idiomas
 :::
 
 ::: {style="text-align: justify;"}
-**Catalan** <br> Mother tongue
+**Catalán** <br> Nativo
 
-**Spanish** <br> Mother tongue
+**Castellano** <br> Nativo
 
-**English** <br> Upper Intermediate <br> *B2 (MECR)*
+**Inglés** <br> Intermedio-Avanzado <br> *B2 (MECR)*
 :::
 :::::
 
 ::::: {.column width="50%"}
 ::: {style="text-align: center;"}
-## Skills
+## Habilidades
 :::
 
 ::: {style="text-align: justify;"}
-**Business Management** <br> MS Office, SAP, SAP BO, AS/400, MS Dynamics AX, Advanced business user knowledge.
+**Gestión Empresarial** <br> MS Office, SAP, SAP BO, AS/400, MS Dynamics AX, Conocimientos avanzados de negocio.
 
-**Data Analytics** <br> Microsoft SQL Server, SSIS, SSAS, VBA, SPSS Statistics, IBM Cognos , Power BI, SSRS, Tableau, QlickView, SQL, DAX, R and Python.
+**Análisis de Datos** <br> Microsoft SQL Server, SSIS, SSAS, VBA, SPSS Statistics, IBM Cognos , Power BI, SSRS, Tableau, QlickView, SQL, DAX, R y Python.
 :::
 :::::
 :::::::::
 
 <hr style="width: 80%; margin: auto; border-top: 1px solid inherit; margin-top: 20px; margin-bottom: 40px;">
 
-<a href="files/cv_guillem.maya.pdf" download class="btn btn-success">Download pdf</a>
+<a href="files/cv_guillem.maya_es.pdf" download class="btn btn-success">Descargar pdf</a>
